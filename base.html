@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+
+<html>
+
+<head>
+
+	<meta charset"utf-8">
+	<title> {% block pagetitle %}  {% endblock %} </title>
+	
+</head>
+
+
+<style>
+.myDiv {
+		bottom-border: 5px outset black;
+		background-color: rgb(66, 73, 87);
+		text-align: center;
+		color: white;
+	}
+body {
+background-color:rgb(66,73,87);
+}
+
+h2 {
+	color: white;
+}
+
+p.main{
+ color:  white;
+ font-size: 20px;
+  text-align:center; 
+}
+
+</style>
+
+
+
+
+
+
+
+
+<body>
+
+
+<div class="myDiv">
+	{% include 'navbar.html' %}
+</div> 
+
+
+
+	<main>
+		{% block content %}
+
+
+
+		{% endblock %}
+	</main>
+</body>
+</html>
